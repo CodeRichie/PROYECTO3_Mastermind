@@ -77,7 +77,7 @@ h2{
     margin: 20px auto;
 }
 
-.row{
+.row1{
     display:flex;
     height: 100px;
     justify-content: space-evenly;
@@ -90,15 +90,69 @@ h2{
     background-color: brown;
 }
 
+
 .box1{
     width: 200px;
     height: 200px;
     background-color: brown;
+    margin: 20px;
+    padding: 20px;
 }
+
 .box2{
     width: 200px;
     height: 200px;
-    background-color: white;
+    background-color: rgb(87, 185, 48);
+    margin: 20px;
+    padding: 20px;
 }
+
+.box3{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(37, 105, 194);
+    margin: 20px;
+    padding: 20px;
+}
+
+.box4{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(162, 48, 185);
+    margin: 20px;
+    padding: 20px;
+}
+
+
+.box5{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+}
+
+.box6{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+}
+.box7{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+}
+.box8{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+}
+
 
 
