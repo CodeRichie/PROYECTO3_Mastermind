@@ -1,0 +1,95 @@
+@font-face{
+    font-family: 'Namecat';
+    src:url(./fonts/namecat/Namecat.otf);
+}
+body {
+    background: url("../images/fondo.jpg")
+}
+h2{
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+    
+}
+.homeh1{
+    font-family: 'Namecat';
+    color: floralwhite;
+    font-size: 80px;
+    position: absolute;
+    text-align: center;
+    left:40%;
+    top:30%
+}
+.button-container {
+    margin-top: 20px;
+}
+
+.btn-primary{
+    display:block;
+    width: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    border-radius: 10px;
+    margin: 150px 130px;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: white;
+    background-color: mediumturquoise;
+    align-items: left;
+}
+.btn-primary:hover {
+    background-color: transparent;
+    border: 2px solid mediumturquoise;
+    color: mediumturquoise;
+}
+.btn-info {
+    display:block;
+    width: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    border-radius: 10px;
+    margin: 150px 130px;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(159, 72, 209);
+}
+.btn-info:hover {
+    background-color: transparent;
+    border: 2px solid rgb(159, 72, 209);
+    color: rgb(159, 72, 209);
+}
+
+.containerHelp {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.board{
+    background-color: goldenrod;
+    height: 805px;
+    width: 400px;
+    border-radius: 3%;
+    margin: 20px auto;
+}
+
+.row{
+    display:flex;
+    height: 100px;
+    justify-content: space-evenly;
+    padding: 3rem;
+    
+}
+.cell{
+    width: 20px;
+    height: 15px;
+    background-color: brown;
+}
+
+
+
+
