@@ -17,24 +17,33 @@ function createDiv(color) {
     }
 
 function createAllDivs() {
-  localStorage.setItem('colorOrder', JSON.stringify(colors));
+  const colorOrder = JSON.parse(localStorage.getItem('colorOrder'));
     const container = document.getElementById('select');
-    colors.forEach(color => {
+    const colorsToPrint =   colorOrder ?? Array.from({ length: 4 });
+    colorsToPrint.forEach(color => {
         const div = createDiv(color);
         container.appendChild(div);
     });
-    }
+  }
     
 createAllDivs();
 
-
 const renderButton = document.getElementById('jugar');
+
 renderButton.addEventListener('click', function() {
-    if (!localStorage.getItem('colorOrder')) {
+  const colorOrder = JSON.parse(localStorage.getItem('colorOrder'));
+  if (!colorOrder) {
     alert('Please complete the color sequence before rendering another page.');
-    return;
+  }
+
+  if (colorOrder ) {
+    if (colorOrder.some(color => color === '')) {
+      alert('Please complete the color sequence before rendering another page.');
     }
-    window.location.href = 'Juego.html'; 
+    if (colorOrder.every(color => color !== '')) {  
+      window.location.href = 'Juego.html'; 
+    }
+  }
 });
 
 

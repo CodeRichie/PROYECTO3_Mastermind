@@ -5,7 +5,6 @@ const botonJugar = document.getElementById("jugar");
 
 
 botonJugar.addEventListener("click", ()=>{
-    console.log(inputName.value);
     localStorage.setItem("nombreJugador", inputName.value) 
 
     if (inputName.value==="") {
